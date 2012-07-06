@@ -49,7 +49,7 @@ libtvm: $(LIBTVM_OBJECTS)
 
 # Build the TVM interpreter
 tinyflock: $(OBJECTS)
-	$(CC) $(LFLAGS) $(OBJECTS) -lSDL -lGL -o tinyflock
+	$(CC) $(LFLAGS) $(OBJECTS) `sdl-config --cflags --libs` -framework OpenGL -o tinyflock
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@

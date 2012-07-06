@@ -1,8 +1,8 @@
 #ifndef FLOCK_H_
 #define FLOCK_H_
 
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
 
 #include "vector.h"
 #include "configuration.h"
